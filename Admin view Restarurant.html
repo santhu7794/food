@@ -23,14 +23,15 @@
       padding: 2px;
       border-collapse: collapse;
     }
+    
   </style>
 
   <body>
     <div class="container-fluid">
-      <h5>Admin view Restarurant:</h5>
+      <h5 class="text-white">Admin view Restarurant:</h5>
       <div class="row text-center mt-5">
         <table>
-          <tr>
+          <tr class="bg-secondary text-white">
             <th>S.No</th>
             <th>First Name</th>
             <th>Last Name</th>
@@ -56,7 +57,7 @@
               <a href=""><i class="bi bi-pencil-square"></i></a>
             </td>
           </tr>
-          <tr>
+          <tr class="bg-light">
             <td>2</td>
             <td>ch</td>
             <td>madhukar</td>
@@ -80,15 +81,13 @@
             <td>bharth biryani</td>
             <td>05421542544</td>
             <td>Ramnagar</td>
-            <td>
-              <a
-                href="Admin can Update the Restaurant  Status.html"
-                target="_parent"
-                ><i class="bi bi-pencil-square"></i
-              ></a>
+            <td class="text-primary">
+            <i class="bi bi-pencil-square" 
+            data-bs-toggle="modal"
+            data-bs-target="#myModal"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="bg-light">
             <td>4</td>
             <td>D</td>
             <td>santhosh</td>
@@ -116,7 +115,7 @@
               <a href=""><i class="bi bi-pencil-square"></i></a>
             </td>
           </tr>
-          <tr>
+          <tr class="bg-light">
             <td>6</td>
             <td>D</td>
             <td>sharth</td>
@@ -131,6 +130,133 @@
             </td>
           </tr>
         </table>
+      </div>
+    </div>
+
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <!-- <div class="modal-header">
+                    <h4 class="modal-title m-auto ">Edit details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> -->
+
+          <!-- Modal body -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 p-0">
+                <div class="card border-0">
+                  <div class="card-header bg-success">
+                    <h5 class="text-center">Edit details</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="row p-4">
+                    <div class="col">
+                      <label class="form-label">First Name</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Last Name</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">User Name</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="User Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="row p-4">
+                    <div class="col">
+                      <label class="form-label">Phone Number</label>
+                      <input
+                        class="form-control"
+                        type="tel"
+                        placeholder="Enter phone Number"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Email</label>
+                      <input
+                        class="form-control mb-2"
+                        type="email"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Restarurant Name</label>
+                      <input
+                        class="form-control mb-2"
+                        type="Text"
+                        placeholder="Enter Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="row p-4">
+                    <div class="col">
+                      <label class="form-label">Mobile Number</label>
+                      <input
+                        class="form-control"
+                        type="tel"
+                        placeholder="Enter phone Number"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Adrress</label>
+                      <input
+                        class="form-control"
+                        type="tel"
+                        placeholder="Enter Adrress"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Status</label>
+                      <select>
+                        <option value="select">select</option>
+                        <option value="select">Active</option>
+                        <option value="Male">Dective</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col">
+                      <button class="btn btn-success">Update</button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-success">Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   </body>

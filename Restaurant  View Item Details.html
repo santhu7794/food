@@ -22,12 +22,13 @@
         padding: 2px;
         border-collapse: collapse;
       }
+    
     </style>
   </head>
   <body>
-    <div class="container">
+    <div class="container p-5">
       <table>
-        <tr>
+        <tr class="bg-secondary text-white">
           <th>S.No</th>
           <th>Restarurant</th>
           <th>Item Type</th>
@@ -36,21 +37,22 @@
           <th>Image</th>
           <th>Actions</th>
         </tr>
-        <tr>
+        <tr class="bg-light">
           <td>1</td>
           <td>peacock</td>
           <td>Non-Veg</td>
           <td>briyani</td>
           <td>150</td>
-          <td>
-            <a href=""><img src="./special.jpg" width="10%" /></a>
+          <td class="w-25">
+            <a href=""><img src="./special.jpg" width="30%" /></a>
           </td>
-          <td>
-            <a href="Restaurant Can Edit  and Update  items.html"
-              ><i class="bi bi-pencil-square"></i
-            ></a>
-            <a href=""><i class="bi bi-trash3-fill"></i></a>
-          </td>
+          
+            <td class="text-primary">
+              <i class="bi bi-pencil-square" 
+              data-bs-toggle="modal"
+              data-bs-target="#myModal"></i><i class="bi bi-trash3-fill"></i>
+              </td>
+          
         </tr>
         <tr>
           <td>2</td>
@@ -59,21 +61,21 @@
           <td>briyani</td>
           <td>120</td>
           <td>
-            <a href=""><img src="./veg.cms" width="10%" /></a>
+            <a href=""><img src="./veg.cms" width="30%" /></a>
           </td>
           <td>
             <a href=""><i class="bi bi-pencil-square"></i></a>
             <a href=""><i class="bi bi-trash3-fill"></i></a>
           </td>
         </tr>
-        <tr>
+        <tr class="bg-light">
           <td>3</td>
           <td>swetha</td>
           <td>Veg</td>
           <td>briyani</td>
           <td>110</td>
           <td>
-            <a href=""><img src="./Veg Biryani.webp" width="10%" /></a>
+            <a href=""><img src="./Veg Biryani.webp" width="30%" /></a>
           </td>
           <td>
             <a href=""><i class="bi bi-pencil-square"></i></a>
@@ -82,5 +84,132 @@
         </tr>
       </table>
     </div>
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <!-- <div class="modal-header">
+                    <h4 class="modal-title m-auto ">Edit details</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div> -->
+
+          <!-- Modal body -->
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-12 p-0">
+                <div class="card border-0">
+                  <div class="card-header bg-success">
+                    <h5 class="text-center">Edit details</h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                    ></button>
+                  </div>
+                  <div class="row p-4">
+                    <div class="col">
+                      <label class="form-label">First Name</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="First Name"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Last Name</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Last Name"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">User Name</label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="User Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="row p-4">
+                    <div class="col">
+                      <label class="form-label">Phone Number</label>
+                      <input
+                        class="form-control"
+                        type="tel"
+                        placeholder="Enter phone Number"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Email</label>
+                      <input
+                        class="form-control mb-2"
+                        type="email"
+                        placeholder="Enter email"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Restarurant Name</label>
+                      <input
+                        class="form-control mb-2"
+                        type="Text"
+                        placeholder="Enter Name"
+                      />
+                    </div>
+                  </div>
+                  <div class="row p-4">
+                    <div class="col">
+                      <label class="form-label">Mobile Number</label>
+                      <input
+                        class="form-control"
+                        type="tel"
+                        placeholder="Enter phone Number"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Adrress</label>
+                      <input
+                        class="form-control"
+                        type="tel"
+                        placeholder="Enter Adrress"
+                      />
+                    </div>
+                    <div class="col">
+                      <label class="form-label">Status</label>
+                      <select>
+                        <option value="select">select</option>
+                        <option value="select">Active</option>
+                        <option value="Male">Dective</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row text-center">
+                    <div class="col">
+                      <button class="btn btn-success">Update</button>
+                    </div>
+                    <div class="col">
+                      <button class="btn btn-success">Reset</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </body>
 </html>
